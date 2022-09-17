@@ -1,0 +1,92 @@
+*{
+     padding: 0;
+     margin: 0;
+     /* overflow-x: hidden; */
+     box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+     width: 8px;
+}
+
+html::-webkit-scrollbar-thumb{
+     background-color: rgba(255, 166, 0, 0.788);
+}
+
+
+html,body{
+     height: 100%;
+     width: 100%;
+}
+
+.nav-item a:hover{
+     color: rgb(27, 95, 42) !important;
+}
+
+.banner-home{
+     display: table;
+     background-image: linear-gradient(
+          rgba(0,0,0,0.6),
+          rgba(0,0,0,0.6)
+     ),url('img/grave.jpg');
+     height: 70vh;
+     width: 100%;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat:no-repeat;
+}
+
+
+.prodact-banner{
+     height: 50vh;
+     width: 100%;
+     background-image: linear-gradient(
+          rgba(0, 0, 0, 0.178),
+          rgba(0, 0, 0, 0.212)
+     ),url('img/banner3.jpg');
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 79%, 60% 99%, 32% 83%, 0 95%, 0 0);
+     display: table;
+
+     
+}
+
+.socal-media img{
+     width: 35px;
+     border: 3px solid white;
+     border-radius: 100%;
+     padding: 2px;
+     transition: all,2s ;
+}
+.socal-media img:hover{
+     transform: scale(1.2);
+     border: 3px solid rgba(224, 174, 10, 0.5);
+}
+
+
+.to-top{
+     position: fixed;
+     right: 32px;
+     bottom: 16px;
+     background-color: rgb(12, 12, 12);
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     font-weight: bold;
+     pointer-events: none;
+     transition: all.5s;
+     opacity: 0;
+}
+
+.to-top.active{
+     opacity: 1;
+     pointer-events: auto;
+}
